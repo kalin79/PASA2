@@ -1,0 +1,51 @@
+.pageEncuesta
+     .contentEncuesta
+          background: #003959
+          padding: 3rem 0 5rem
+          .boxCirculoEncuesta
+               border: 0px solid red
+               margin: 2.5rem 0
+               padding: 3rem 2rem 0
+
+               a
+                    border: 0px solid green
+                    h3
+                         position: absolute
+                         top: -3rem
+                         left: -.75rem
+                         width: 200px
+                         @include fontFree(#000000, 29px,24px,24px,20px, $fontTitle)
+                         text-align: center
+                         line-height: 1.5em
+                         margin-bottom: 0rem
+                         &.right
+                              left: auto
+                              right: -1.2rem
+                              top: 4rem
+                              @media screen and (min-width: 992px)
+                                   left: auto
+                                   right: -2.5rem
+                                   top: -3rem
+                    .boxCircle
+                         width: 50px
+                         height: 50px
+                         border: 0px solid #ff0f64
+                         border-radius: 0%
+                         background: white
+                         transition: .5s ease-in background
+                         @media screen and (min-width: 768px)
+                              width: 50px
+                              height: 50px
+
+                         &.active,
+                         &:hover
+                              background: $pink
+                              p
+                                   color: white
+                         &.color2
+                              border-color: #e2c413
+                         &.color3
+                              border-color: #5db45b
+                         p
+                              
+                              @include fontFree(#000000, 38px,36px,33px,25px, $fontDescriptionMedium)
